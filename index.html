@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pichet Binette lab</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="home-page">
+
+        <div class="wrapper">
+<header>
+    <div class="top-banner" id="topBanner" style="display:none;">
+  <span>
+    We are currently seeking new students for Master's and Ph.D. positions.
+    If you're interested, please <a href="/nous_joindre.html">contact us</a>.
+  </span>
+  <button class="banner-close" id="bannerClose">
+  <svg class="close-icon" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="none"/>
+    <line x1="15" y1="9" x2="9" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="9" y1="9" x2="15" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</button>
+</div>
+
+    <nav class="navbar">
+  
+  <button class="nav-toggle" aria-label="toggle navigation">
+    ☰
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="/index.html">HOME</a></li>
+    <li><a href="/research.html">RESEARCH</a></li>
+    <li><a href="/team.html">TEAM</a></li>
+    <li><a href="/publication.html">PUBLICATION</a></li>
+    <li><a href="/news.html">NEWS</a></li>
+    <li><a href="/funding.html">FUNDING</a></li>
+    <li><a href="/nous_joindre.html">CONTACT US</a></li>
+  </ul>
+
+  <a href="https://www.linkedin.com/in/alexa-pichet-binette-388836b9/?originalSubdomain=ca" target="_blank">
+  <div class="header-main-sm-li">
+    <svg class="linkedin-icon" viewBox="0 0 24 24">
+      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.9c0-1.88-.03-4.3-2.62-4.3-2.62 0-3.02 2.05-3.02 4.17V24h-4V8z"/>
+    </svg>
+  </div>
+</a>
+</nav>
+
+        </header> 
+   
+        <div class="hero">
+            <h1 class="h1-light" >PICHET BINETTE LAB</h1>
+        </div>
+            
+        <!--    
+        <div class="slide-container">
+
+        <div class="slide-in">
+        <p>We are currently seeking new students. If you are interested in pursuing a Master's or Ph.D. in the field of neuroscience, we would be delighted to meet with you.
+        We encourage you to explore our website and assess whether our research aligns with your academic aspirations. Should you find a match, please do not hesitate to <a class="blanc" href="/nous_joindre.html">contact us</a>.</p>
+            </div>
+            </div>
+        -->
+        <div class="home-container">
+            <div class="intro">          
+              <p class="bold p-left-padding">
+                Our laboratory investigates the biological mechanisms underlying aging and neurodegeneration, with a primary focus on Alzheimer’s disease.</p>
+               
+               <hr class="transparent-line">
+   
+                <p class="p-left-padding">We employ a comprehensive, multimodal approach that integrates neuroimaging techniques (MRI and PET), blood-based biomarkers, and proteomic analyses to examine cognitive decline and identify early indicators of Alzheimer’s disease. A central focus of our research is pTau—a critical biomarker intimately linked to the disease’s progression.
+
+Utilizing longitudinal cohort studies alongside advanced machine learning methodologies, we strive to enhance early diagnostic capabilities and explore robust intervention strategies. By uniting expertise in neuroscience, imaging, and artificial intelligence, our mission is to deepen our understanding of brain aging and contribute meaningfully to the prevention and treatment of neurodegenerative disorders.</p> 
+       </div>
+            
+            <div class="slideshow-container">
+                <img class="slide" src="./Images/brain-image-1.jpg" alt="slideshow">
+                <img class="slide" src="./Images/biomarker-image-1.png" alt="side show">
+                <img class="slide" src="./Images/slideshow3.jpg" alt="slideshow">
+                <img class="slide" src="./Images/slideshow4.jpg" alt="slideshow">
+                <img class="slide" src="./Images/slideshow5.jpg" alt="slideshow">
+                <img class="slide" src="./Images/slideshow6.jpg" alt="slideshow">
+                
+              </div>
+            
+            </div>
+    <footer>
+    <div class="container-footer-contact">
+        <div class="footer-contact-img">
+            
+            <img src="./Images/udm.png" alt="IUGM">
+        </div>
+        
+        <div>
+            <address class="iugm-adr">
+                Centre de recherche IUGM<br>
+                4545 chemin Queen-Mary<br>
+                Office : M6829<br>
+                Montreal, Quebec<br>
+                Canada H3W 1W5<BR>
+            </address>
+            <address class="iugm-adr">
+                <a href="mailto:alexa.pichet.binette@umontreal.ca">
+                    alexa.pichet.binette@umontreal.ca
+                </a>
+            </address>
+        </div>
+        <div class="footer-contact-img">
+            <img src="./Images/iugm-logo9.png" alt="IUGM">
+        </div>
+    </div> 
+    <div class="MB">
+        <span class="mb-left">Version 0.1</span>
+        <span class="mb-center">Created by MB</span>
+    </div>
+      
+    </footer>
+        </div>
+    <script>
+  const banner = document.getElementById('topBanner');
+  const closeBtn = document.getElementById('bannerClose');
+
+  // Show banner only if not closed this session
+  if (sessionStorage.getItem('bannerClosed') !== 'true') {
+    banner.style.display = 'flex';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    banner.style.display = 'none';
+    sessionStorage.setItem('bannerClosed', 'true');
+  });
+</script>
+
+        <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide() {
+          // Hide all slides
+        slides.forEach(slide => slide.style.display = 'none');
+        // Show the current slide
+        slides[currentSlideIndex].style.display = 'block';
+        // Move to the next slide
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length; // Loop back to first slide after last one
+        }
+        // Initial call to display the first slide
+        showSlide();
+        // Change slide every 2 seconds (2000 milliseconds)
+        setInterval(showSlide, 3000);
+    </script>
+    <script>
+  const banner = document.getElementById('topBanner');
+  const closeBtn = document.getElementById('bannerClose');
+
+  // Check if banner was closed this session
+  if (sessionStorage.getItem('bannerClosed') === 'true') {
+    banner.style.display = 'none';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    banner.style.display = 'none';
+    sessionStorage.setItem('bannerClosed', 'true');
+  });
+</script>
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+
+        toggle.addEventListener('click', () => {
+        links.classList.toggle('active');
+        });
+    </script>
+
+    </body>
+</html>

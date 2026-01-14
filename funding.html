@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pichet Binette lab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <div class="wrapper">    
+    <header>
+    <nav class="navbar">
+  
+  <button class="nav-toggle" aria-label="toggle navigation">
+    ☰
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="/index.html">HOME</a></li>
+    <li><a href="/research.html">RESEARCH</a></li>
+    <li><a href="/team.html">TEAM</a></li>
+    <li><a href="/publication.html">PUBLICATION</a></li>
+    <li><a href="/news.html">NEWS</a></li>
+    <li><a href="/funding.html">FUNDING</a></li>
+    <li><a href="/nous_joindre.html">CONTACT US</a></li>
+  </ul>
+
+  <a href="https://www.linkedin.com/in/alexa-pichet-binette-388836b9/?originalSubdomain=ca" target="_blank"><div class="header-main-sm-li"></div></a>
+</nav>
+
+        </header> 
+        <div class="banner-container">
+            <img src="./Images/funding_banner.jpg" alt="Funding" class="banner-image">
+                <div class="banner-text">FUNDING</div>
+        </div>
+     
+            <div class="funding-ack">
+            <p>We gratefully acknowledge the organizations whose generous support enables our research into Alzheimer’s disease and related neurodegenerative disorders.</p> 
+            <p>Nous remercions chaleureusement les organisations dont le soutien généreux rend possible nos recherches sur la maladie d’Alzheimer et les troubles neurodégénératifs apparentés.</p> 
+            </div>
+    
+              
+    <div class="funding-container">
+        <a href="https://frq.gouv.qc.ca/" target="_blank"><div class="funding-img"><img src="./Images/funding_FRQS.png" alt="frqs"></div></a>
+        <a href="https://www.figm.ca/" target="_blank"><div class="funding-img"><img src="./Images/logo-figm-fr.svg" alt="IIUGM"></div></a>
+        <a href="https://rsn.quebec/" target="_blank"><div class="funding-img"><img src="./Images/N3.png"></div></a>
+        <a href="https://unf-montreal.ca/" target="_blank"><div class="funding-img"><img  src="./Images/funding-logo_unf.jpg"></div></a>
+        <a href="https://www.lilly.com/" target="_blank"><div class="funding-img"><img  src="./Images/Eli_Lilly_and_Company.png"></div></a>
+        <a href="https://www.umontreal.ca/" target="_blank"><div class="funding-img"><img  src="./Images/udm.png" alt="IUGM"></div></a>
+    </div>
+        
+    <footer>
+    <div class="container-footer-contact">
+        <div class="footer-contact-img">
+            <img src="./Images/udm.png" alt="IUGM">
+        </div>
+        
+        <div>
+            <address class="iugm-adr">
+                Centre de recherche IUGM<br>
+                4545 chemin Queen-Mary<br>
+                Office : M6829<br>
+                Montreal, Quebec<br>
+                Canada H3W 1W5<BR>
+            </address>
+            <address class="iugm-adr">
+                <a href="mailto:alexa.pichet.binette@umontreal.ca">
+                    alexa.pichet.binette@umontreal.ca
+                </a>
+            </address>
+        </div>
+        <div class="footer-contact-img">
+            <img src="./Images/iugm-logo9.png" alt="IUGM">
+        </div>
+    </div> 
+    <div class="MB">
+        <span class="mb-center">Created by MB</span>
+        <span class="mb-left">Version 0.1</span>
+    </div>
+    </footer>
+    </div>
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+
+        toggle.addEventListener('click', () => {
+        links.classList.toggle('active');
+        });
+    </script>    
+</body>
+</html>
