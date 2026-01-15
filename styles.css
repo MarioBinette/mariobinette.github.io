@@ -128,11 +128,7 @@ em {
     margin-left: auto; /* keeps icon on the right */
   }
 }
-@media (max-width: 800px) {
-.home-page .navbar {
-    padding-top: 230px; /* adjust to match your slide-in height */
-  }
-}
+
 
 
 nav ul {
